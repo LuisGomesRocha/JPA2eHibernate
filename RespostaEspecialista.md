@@ -1,13 +1,13 @@
 #Resposta Especialista
 
-Peso 0.25: Mapeamento simples para as classes Aluno e Avaliação
-Peso 1: Mapeamento como @ManyToOne para as classes Resposta e AutoCorrecao
-Peso 0.25: Criação de EntityManagerFactory, EntityManager e chamada do persist para salvar um objeto do tipo Aluno
-Peso 0.25: Criação/Reaproveitamento de EntityManagerFactory, EntityManager e chamada do persist para salvar um objeto do tipo Avaliação
-Peso 2: Criação/Reaproveitamento de EntityManagerFactory, EntityManager, carregamento do aluno, da avaliação e posterior persist da resposta
-Peso 2: Criação/Reaproveitamento de EntityManagerFactory, EntityManager, carregamento da resposta e posterior persist da auto correção.
-Peso 2.25: Carregamento da auto correção e navegação até o nome do(a) aluno(a) tomando cuidado com o lazy load
-Peso 2: Carregamento de todas respostas de um(a) aluno(a) via query a partir de um(a) determinado(a) aluno(a).
+- [x] Peso 0.25: Mapeamento simples para as classes Aluno e Avaliação
+- [x] Peso 1: Mapeamento como @ManyToOne para as classes Resposta e AutoCorrecao
+- [x] Peso 0.25: Criação de EntityManagerFactory, EntityManager e chamada do persist para salvar um objeto do tipo Aluno
+- [x] Peso 0.25: Criação/Reaproveitamento de EntityManagerFactory, EntityManager e chamada do persist para salvar um objeto do tipo Avaliação
+- [x] Peso 2: Criação/Reaproveitamento de EntityManagerFactory, EntityManager, carregamento do aluno, da avaliação e posterior persist da resposta
+- [x] Peso 2: Criação/Reaproveitamento de EntityManagerFactory, EntityManager, carregamento da resposta e posterior persist da auto correção.
+- [x] Peso 2.25: Carregamento da auto correção e navegação até o nome do(a) aluno(a) tomando cuidado com o lazy load
+- [x] Peso 2: Carregamento de todas respostas de um(a) aluno(a) via query a partir de um(a) determinado(a) aluno(a).
 
 - [x] Crio a classe Aluno, adiciono os atributos necessários e também adiciono um id. Adiciono o Id para mapear como chave primária para o banco de dados.
 - [x] Mapeio a classe Aluno para ser entendida pelo HIbernate. Uso o @Entity em cima da classe e o @Id em cima do atributo id. Poderia colocar também o @Id no email. A @Entity explica para o Hibernate que aquela classe vai ser uma tabela no banco e o @Id explica que aquele atributo vai ser a chave primaria na tabela. Os outros atributos eu não preciso mapear pq ele já vai mapear para colunas do mesmo nome.
